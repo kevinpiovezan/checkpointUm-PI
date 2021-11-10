@@ -2,7 +2,7 @@ function microondas(prato, tempo) {
     let mensagem;
     switch (prato) {
         case 'Pipoca':
-            mensagem = `Prato escolhido: Pipoca\nTempo de preparo escolhido: ${tempo}\ns`
+            mensagem = `Prato escolhido: Pipoca\nTempo de preparo escolhido: ${tempo}\n`
             if (tempo < 10) mensagem += 'Tempo insulficiente\n'
             if (tempo >= 10 && tempo < 20) mensagem += 'Prato pronto, bom apetite!\n'
             if (tempo >= 30) {
@@ -72,7 +72,7 @@ function microondas(prato, tempo) {
     console.log(mensagem)
 }
 microondas('Carne', 15);
-microondas('Pipoca', 30);
+microondas('Pipoca', 20);
 microondas('Macarrão', 7);
 microondas('Feijão', 36);
 microondas('Brigadeiro', 12);
